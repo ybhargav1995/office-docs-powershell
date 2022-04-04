@@ -1164,7 +1164,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExceptIfFromMemberOf
-This parameter is reserved for internal Microsoft use.
+
 
 ```yaml
 Type: SmtpAddress[]
@@ -1826,7 +1826,7 @@ Accept wildcard characters: False
 ```
 
 ### -FromMemberOf
-This parameter is reserved for internal Microsoft use.
+
 
 ```yaml
 Type: SmtpAddress[]
