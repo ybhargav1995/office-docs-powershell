@@ -660,7 +660,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentIsNotLabeled
-{{ Fill ContentIsNotLabeled Description }}
+The ContentIsNotLabeled parameter specifies a condition for the DLP rule that looks for presence of a label in the content. It matches if there is no label on the file and in case of email this matches when there is no label present on either the message body or the attachments.
 
 ```yaml
 Type: Boolean
@@ -676,7 +676,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContentIsShared
-{{ Fill ContentIsShared Description }}
+The ContentIsShared parameter specifies a condition for the DLP rule that looks for files that are shared. Detects if a file is accessible to anyone other than the OneDrive owner.
 
 ```yaml
 Type: Boolean
@@ -749,7 +749,7 @@ Accept wildcard characters: False
 ```
 
 ### -DocumentCreatedBy
-{{ Fill DocumentCreatedBy Description }}
+The DocumentCreatedBy parameter specifies a condition for the DLP rule that looks for documents created by specific users. You identify the users by email address. You can specify multiple values separated by commas.
 
 ```yaml
 Type: MultiValuedProperty
@@ -765,7 +765,7 @@ Accept wildcard characters: False
 ```
 
 ### -DocumentCreatedByMemberOf
-{{ Fill DocumentCreatedByMemberOf Description }}
+The DocumentCreatedByMemberOf parameter specifies a condition for the DLP rule that looks for documents created by users in specific groups. You can specify multiple values separated by commas.
 
 ```yaml
 Type: RecipientIdParameter[]
@@ -1162,7 +1162,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExceptIfContentIsShared
-{{ Fill ExceptIfContentIsShared Description }}
+This is the esception for ContentIsShared parameter
 
 ```yaml
 Type: Boolean
@@ -1216,7 +1216,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExceptIfDocumentCreatedBy
-{{ Fill ExceptIfDocumentCreatedBy Description }}
+This is exception of DocumentCreatedBy parameter
 
 ```yaml
 Type: MultiValuedProperty
@@ -1232,7 +1232,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExceptIfDocumentCreatedByMemberOf
-{{ Fill ExceptIfDocumentCreatedByMemberOf Description }}
+This is exception of DocumentCreatedByMemberOf parameter
 
 ```yaml
 Type: RecipientIdParameter[]
@@ -3217,7 +3217,7 @@ Accept wildcard characters: False
 ```
 
 ### -SharedByIRMUserRisk
-{{ Fill SharedByIRMUserRisk Description }}
+This parameters let's you identify if the risk level of the user performing the share action matches the configured risk level.
 
 ```yaml
 Type: MultiValuedProperty
